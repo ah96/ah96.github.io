@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amar Halilovic | Explainable Robot Navigation</title>
+  <meta name="description" content="Amar Halilovic, PhD researcher at the Institute of Artificial Intelligence, Ulm University, works on explainable robot navigation. Research topics, publications, teaching and contact.">
+  <meta name="author" content="Amar Halilovic">
+  <link rel="canonical" href="https://ah96.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Amar Halilovic | Explainable Robot Navigation">
+  <meta property="og:description" content="PhD researcher at the Institute of Artificial Intelligence, Ulm University. Research topics, publications, teaching and contact.">
+  <meta property="og:url" content="https://ah96.github.io/">
+  <meta property="og:image" content="https://ah96.github.io/assets/portrait.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101315" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    /* Set the stored colour theme before the first paint, so that the page does not flash. */
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amar Halilovic",
+    "alternateName": "Amar Halilović",
+    "url": "https://ah96.github.io/",
+    "image": "https://ah96.github.io/assets/portrait.jpg",
+    "jobTitle": "PhD researcher",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Ulm University",
+      "department": { "@type": "Organization", "name": "Institute of Artificial Intelligence" }
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Sarajevo" },
+      { "@type": "CollegeOrUniversity", "name": "Mälardalen University" }
+    ],
+    "knowsAbout": ["Explainable AI", "Robotics", "Explainable robotics", "Robot navigation"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=FKQdHQkAAAAJ",
+      "https://orcid.org/0000-0002-2354-986X",
+      "https://dblp.org/pid/296/8164.html",
+      "https://www.researchgate.net/profile/Amar-Halilovic",
+      "https://github.com/ah96",
+      "https://www.uni-ulm.de/en/in/institute-of-artificial-intelligence/inst/team/amar-halilovic/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="progress" aria-hidden="true"></div>
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">Amar Halilovic</a>
+    <nav aria-label="Sections">
+      <ul class="nav">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch between light and dark colours">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ Introduction -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Explainable AI and robotics</p>
+        <h1>Amar Halilovic</h1>
+        <p class="role">PhD researcher at the Institute of Artificial Intelligence, Ulm University</p>
+        <p class="lead">
+          I work on explainable robot navigation: methods that let an autonomous robot
+          communicate its path and motion planning decisions to the people around it.
+        </p>
+        <ul class="links" aria-label="Profiles">
+          <li><a class="btn btn-primary" href="mailto:amar.halilovic@uni-ulm.de">E-mail</a></li>
+          <li><a class="btn" href="https://scholar.google.com/citations?user=FKQdHQkAAAAJ" rel="me noopener">Google Scholar</a></li>
+          <li><a class="btn" href="https://orcid.org/0000-0002-2354-986X" rel="me noopener">ORCID</a></li>
+          <li><a class="btn" href="https://dblp.org/pid/296/8164.html" rel="me noopener">DBLP</a></li>
+          <li><a class="btn" href="https://www.researchgate.net/profile/Amar-Halilovic" rel="me noopener">ResearchGate</a></li>
+          <li><a class="btn" href="https://github.com/ah96" rel="me noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <img src="assets/portrait.jpg" width="560" height="560" alt="Portrait of Amar Halilovic">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================================ About -->
+  <section class="section" id="about">
+    <div class="wrap split">
+      <h2>About</h2>
+      <div class="body">
+        <p>
+          I have worked at the
+          <a href="https://www.uni-ulm.de/en/in/institute-of-artificial-intelligence/">Institute of Artificial Intelligence</a>
+          at Ulm University since April 2021. My field is explainable AI and robotics, and my main topic is
+          explainable robot navigation.
+        </p>
+        <p>
+          Before that I studied Electrical Engineering at the University of Sarajevo and Computer Science at
+          Mälardalen University, from 2015 to 2020, with a focus on control engineering, robotics and
+          computer vision.
+        </p>
+        <p>
+          My doctoral thesis has the title
+          <cite>Explainable Robot Navigation: Grounding, Planning, and Adapting Explanations</cite>.
+        </p>
+        <dl class="facts">
+          <div>
+            <dt>Research interests</dt>
+            <dd>
+              <ul class="chips">
+                <li>Explainable AI</li><li>Robotics</li><li>Explainable robotics</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Methods and tools</dt>
+            <dd>
+              <ul class="chips">
+                <li>AI planning</li><li>Studies with people</li><li>TIAGo robot</li>
+                <li>ROS 2 and Nav2</li><li>Simulation</li><li>Vision-language models</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ Research -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="split">
+        <h2>Research</h2>
+        <div class="body">
+          <p>
+            A robot that moves among people makes decisions that those people cannot see: it stops, waits or
+            takes another way. An explanation tells them why. Before a robot can give one, it has to settle
+            what to explain, in which form, when, and to whom.
+          </p>
+        </div>
+      </div>
+
+      <div class="demo" id="demo">
+        <div class="demo-map" hidden>
+          <svg id="demo-svg" class="demo-svg" tabindex="0" role="application"
+               aria-label="A room with a robot, a shelf and chairs. The arrow keys move the marker. Enter places or removes a chair."></svg>
+          <p class="demo-hint">Put a chair in the robot's way: click or tap the floor. A second click takes the chair away.</p>
+        </div>
+        <div class="demo-talk">
+          <p class="demo-title">Ask the robot</p>
+          <div class="dialogue" aria-live="polite">
+            <p class="say say-person" id="demo-question"><span class="who">Person</span><span class="t">Why did you stop?</span></p>
+            <p class="say say-robot" id="demo-reply"><span class="who">Robot</span><span class="t">A chair blocks my way to the shelf.</span></p>
+          </div>
+          <div class="demo-buttons" hidden>
+            <button type="button" class="btn btn-primary" id="demo-why">Why this way?</button>
+            <button type="button" class="btn btn-primary" id="demo-what">What can I do?</button>
+            <button type="button" class="btn" id="demo-again">Send the robot again</button>
+            <button type="button" class="btn" id="demo-clear">Remove all chairs</button>
+          </div>
+          <p class="demo-note" hidden>
+            An illustration of the idea. The robot plans its way on this grid, and every answer is derived
+            from that plan.
+          </p>
+        </div>
+      </div>
+
+      <div class="split split-next">
+        <div class="body">
+          <figure class="question">
+            <figcaption>Main research question</figcaption>
+            <blockquote>
+              How can an autonomous mobile robot generate, represent, schedule, and adapt explanations of its
+              navigational decisions, and communicate its priorities implicitly when there is no time to
+              explain, so that the humans sharing its environment can understand and accept its behaviour?
+            </blockquote>
+          </figure>
+
+          <h3 class="sub">Five research topics</h3>
+          <ol class="rows rows-num">
+          <li class="row">
+            <span class="num" aria-hidden="true"></span>
+            <div class="row-head">
+              <h4>Generation</h4>
+              <p class="ask">What to explain?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can XAI methods be applied and extended to generate intelligible, environment-grounded explanations?</p>
+              <p class="keys">LIME on the local planner · spatial language · affordances</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="num" aria-hidden="true"></span>
+            <div class="row-head">
+              <h4>Framework</h4>
+              <p class="ask">In which form?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can the explanation process be formalized, and which representation is best?</p>
+              <p class="keys">Decision hierarchy HiXRoN · text, visual, or both</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="num" aria-hidden="true"></span>
+            <div class="row-head">
+              <h4>Planning</h4>
+              <p class="ask">When, and for how long?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can the robot's profile and the context parameterize timing, duration, form and detail? How can scheduling be cast as planning?</p>
+              <p class="keys">Robot personality · temporal planning</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="num" aria-hidden="true"></span>
+            <div class="row-head">
+              <h4>Adaptation</h4>
+              <p class="ask">To whom?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can a robot learn and adapt its strategy to heterogeneous, uncertain preferences?</p>
+              <p class="keys">Online learning · Thompson sampling</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="num" aria-hidden="true"></span>
+            <div class="row-head">
+              <h4>Urgency</h4>
+              <p class="ask">And if there is no time?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can a robot communicate urgency in embodied interaction? Is it perceived as intended, effective and acceptable?</p>
+              <p class="keys">Wording and pitch of the voice</p>
+            </div>
+          </li>
+          </ol>
+
+          <h3 class="sub">Current work</h3>
+          <ul class="rows">
+          <li class="row">
+            <div class="row-head">
+              <h4>Certified explanations</h4>
+              <p class="ask">Are you sure?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">How can the robot verify that the facts it names entail the cause?</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="row-head">
+              <h4>Plan rationales</h4>
+              <p class="ask">Why this step?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">Which function does each action have in the robot's plan?</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="row-head">
+              <h4>Timing under forgetting</h4>
+              <p class="ask">Why tell me now?</p>
+            </div>
+            <div class="row-body">
+              <p class="rq">When should an explanation end, if explaining takes time and people forget?</p>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ Publications -->
+  <!-- To add a publication, copy one <li class="pub"> block into the list of its year. -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <div class="split">
+        <h2>Publications</h2>
+        <div class="body">
+          <p>
+            Peer-reviewed articles, conference and workshop papers, and preprints, newest first.
+            Citation counts are on
+            <a href="https://scholar.google.com/citations?user=FKQdHQkAAAAJ" rel="noopener">Google Scholar</a>.
+          </p>
+          <div class="pub-tools" id="pub-tools" hidden>
+            <label class="vh" for="pub-search">Search the publications</label>
+            <input type="search" id="pub-search" placeholder="Search by title, author, venue or year" autocomplete="off" spellcheck="false">
+            <p class="pub-count" id="pub-count" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2026</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">Expert Systems</span>
+            <p class="title"><a href="https://doi.org/10.1111/exsy.70376">AA-SHAP: Superpixel Affinity for Explainable Image Classification</a></p>
+            <p class="authors">Vahidin Hasić, <b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">Expert Systems 43(9), e70376, 2026. Journal article. <a class="ext" href="https://doi.org/10.1111/exsy.70376">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">HRI 2026</span>
+            <p class="title"><a href="https://doi.org/10.1145/3776734.3794487">Simulating Preference-Aware Robot Explanations: A Probabilistic Perspective on When and How to Explain</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">Companion Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26 Companion), ACM, 2026, pp. 706–710. <a class="ext" href="https://doi.org/10.1145/3776734.3794487">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">ICSR 2026</span>
+            <p class="title">Adaptive Explanation Strategy Selection Under Uncertain Human Responses</p>
+            <p class="authors"><b>Amar Halilovic</b>, Vahidin Hasić, Senka Krivić</p>
+            <p class="where">Proceedings of the 18th International Conference on Social Robotics (ICSR 2026), Springer Nature, 2026. Accepted, in press.</p>
+          </li>
+          <li class="pub">
+            <span class="venue">EvoApplications 2026</span>
+            <p class="title"><a href="https://doi.org/10.1007/978-3-032-23607-4_17">Novel Explainable Graph–Decision Forest Framework for Interpretable Pancreatic Tumor Detection on CT Images</a></p>
+            <p class="authors">Pınar Karadayı-Ataş, <b>Amar Halilovic</b></p>
+            <p class="where">Applications of Evolutionary Computation (EvoApplications 2026), Springer, 2026, pp. 271–287. <a class="ext" href="https://doi.org/10.1007/978-3-032-23607-4_17">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">arXiv</span>
+            <p class="title"><a href="https://arxiv.org/abs/2606.00117">Ontology-Guided Reasoning for Affordance-Based Explanations of Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Vahidin Hasić, Senka Krivić</p>
+            <p class="where">arXiv preprint arXiv:2606.00117, 2026. <a class="ext" href="https://arxiv.org/abs/2606.00117">arXiv</a></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2025</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">ICRA 2025</span>
+            <p class="title"><a href="https://doi.org/10.1109/ICRA55743.2025.11128010">Affordance-Based Explanations of Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">2025 IEEE International Conference on Robotics and Automation (ICRA 2025), IEEE, 2025, pp. 13523–13529. <a class="ext" href="https://doi.org/10.1109/ICRA55743.2025.11128010">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">AAAI-25</span>
+            <p class="title"><a href="https://doi.org/10.1609/aaai.v39i28.35208">Explainable Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b></p>
+            <p class="where">Proceedings of the AAAI Conference on Artificial Intelligence 39(28), AAAI-25 Doctoral Consortium Track, 2025, pp. 29261–29262. <a class="ext" href="https://doi.org/10.1609/aaai.v39i28.35208">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">xAI 2025</span>
+            <p class="title"><a href="https://doi.org/10.1007/978-3-032-08330-2_2">Superpixel Correlation for Explainable Image Classification</a></p>
+            <p class="authors">Vahidin Hasić, <b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">Explainable Artificial Intelligence (3rd World Conference on eXplainable Artificial Intelligence, xAI 2025), Springer, 2025, pp. 27–44. <a class="ext" href="https://doi.org/10.1007/978-3-032-08330-2_2">DOI</a></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2024</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">ICRA 2024</span>
+            <p class="title"><a href="https://doi.org/10.1109/ICRA57147.2024.10611000">Planning of Explanations for Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">2024 IEEE International Conference on Robotics and Automation (ICRA 2024), IEEE, 2024, pp. 5478–5484. <a class="ext" href="https://doi.org/10.1109/ICRA57147.2024.10611000">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">TAHRI 2024</span>
+            <p class="title"><a href="https://doi.org/10.1145/3648536.3648537">Exploring the Impact of Explanation Representation on User Satisfaction in Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Vanchha Chandrayan, Senka Krivić</p>
+            <p class="where">Proceedings of the 2024 International Symposium on Technological Advances in Human-Robot Interaction (TAHRI 2024), ACM, 2024, pp. 1–9. <a class="ext" href="https://doi.org/10.1145/3648536.3648537">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">HFR 2023</span>
+            <p class="title"><a href="https://doi.org/10.1007/978-3-031-55000-3_15">Towards a Holistic Framework for Explainable Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">Human-Friendly Robotics 2023 (16th International Workshop on Human-Friendly Robotics, HFR 2023), Springer, 2024, pp. 213–228. <a class="ext" href="https://doi.org/10.1007/978-3-031-55000-3_15">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">RSS 2024 Workshop</span>
+            <p class="title"><a href="https://arxiv.org/abs/2411.05022">Towards Probabilistic Planning of Explanations for Robot Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić, Gerard Canal</p>
+            <p class="where">RSS 2024 Workshop on Unsolved Problems in Social Robot Navigation, 2024. arXiv:2411.05022. <a class="ext" href="https://arxiv.org/abs/2411.05022">arXiv</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">KDD 2024 Workshop</span>
+            <p class="title"><a href="https://ceur-ws.org/Vol-3841/Paper1.pdf">Towards Fast Visual Explanations of Local Path Planning with LIME and GAN</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">KDD 2024 Workshop on Human-Interpretable AI, 2024. <a class="ext" href="https://ceur-ws.org/Vol-3841/Paper1.pdf">PDF</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">MEi:CogSci 2024</span>
+            <p class="title"><a href="https://journals.phl.univie.ac.at/meicogsci/article/view/749">Framework for the Planning of Affordance-Based Explanations in Robot Path Planning</a></p>
+            <p class="authors"><b>Amar Halilovic</b></p>
+            <p class="where">Proceedings of the MEi:CogSci Conference 18, 2024. <a class="ext" href="https://journals.phl.univie.ac.at/meicogsci/article/view/749">Abstract</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">arXiv</span>
+            <p class="title"><a href="https://arxiv.org/abs/2405.13841">Robot Explanation Identity</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">arXiv preprint arXiv:2405.13841, 2024. <a class="ext" href="https://arxiv.org/abs/2405.13841">arXiv</a></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2023</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">ICSR 2023</span>
+            <p class="title"><a href="https://doi.org/10.1007/978-981-99-8718-4_12">The Influence of a Robot's Personality on Real-Time Explanations of Its Navigation</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">Social Robotics (15th International Conference on Social Robotics, ICSR 2023), Springer, 2023, pp. 133–147. <a class="ext" href="https://doi.org/10.1007/978-981-99-8718-4_12">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">HRI 2023</span>
+            <p class="title"><a href="https://doi.org/10.1145/3568294.3580141">Visuo-Textual Explanations of a Robot's Navigational Choices</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Felix Lindner</p>
+            <p class="where">Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction (HRI '23 Companion), ACM, 2023, pp. 531–535. <a class="ext" href="https://doi.org/10.1145/3568294.3580141">DOI</a></p>
+          </li>
+          <li class="pub">
+            <span class="venue">arXiv</span>
+            <p class="title"><a href="https://arxiv.org/abs/2311.07132">Understanding Path Planning Explanations</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Senka Krivić</p>
+            <p class="where">arXiv preprint arXiv:2311.07132, 2023. <a class="ext" href="https://arxiv.org/abs/2311.07132">arXiv</a></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2022</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">RAAD 2022</span>
+            <p class="title"><a href="https://doi.org/10.1007/978-3-031-04870-8_13">Explaining Local Path Plans Using LIME</a></p>
+            <p class="authors"><b>Amar Halilovic</b>, Felix Lindner</p>
+            <p class="where">Advances in Service and Industrial Robotics (31st International Conference on Robotics in Alpe-Adria Danube Region, RAAD 2022), Springer, 2022, pp. 106–113. <a class="ext" href="https://doi.org/10.1007/978-3-031-04870-8_13">DOI</a></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2021</h3>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="venue">ICDL 2021 Workshop</span>
+            <p class="title">Explanations in, Explanations out: Human-in-the-Loop Social Navigation Learning</p>
+            <p class="authors">Jakob Karalus, <b>Amar Halilovic</b>, Felix Lindner</p>
+            <p class="where">ICDL 2021 Workshop on Human-Aligned Reinforcement Learning for Autonomous Agents and Robots, 2021.</p>
+          </li>
+          <li class="pub">
+            <span class="venue">ECBS 2021</span>
+            <p class="title">Multi-Constrained Network Occupancy Optimization</p>
+            <p class="authors"><b>Amar Halilovic</b>, Nedim Zaimovic, Hamid Feyzmahdavian, Tiberiu Seceleanu</p>
+            <p class="where">7th Conference on the Engineering of Computer Based Systems (ECBS 2021), 2021.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="pub-none" id="pub-none" hidden>No publication matches the search.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================ Teaching -->
+  <section class="section" id="teaching">
+    <div class="wrap split">
+      <h2>Teaching</h2>
+      <div class="body">
+        <p>Courses at Ulm University in which I have been involved.</p>
+        <div class="cols">
+          <div>
+            <h3 class="mini">Lectures</h3>
+            <ul class="plain">
+              <li>Robot Operating Systems</li>
+              <li>Explainable Artificial Intelligence</li>
+              <li>Knowledge-Based Artificial Intelligence</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mini">Project courses</h3>
+            <ul class="plain">
+              <li>Learning Robots</li>
+              <li>Explainable Artificial Intelligence</li>
+              <li>Artificial Intelligence for Autonomous Systems</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mini">Seminars</h3>
+            <ul class="plain">
+              <li>Advances in Artificial Intelligence</li>
+              <li>Explainable Artificial Intelligence</li>
+              <li>Proseminar Artificial Intelligence</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          I supervise Bachelor's and Master's theses. In November 2026 I gave the guest lecture
+          <cite>Ethical AI and Robotics</cite> in the Responsible AI course at the Faculty of Electrical
+          Engineering, University of Sarajevo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ Talks -->
+  <section class="section" id="talks">
+    <div class="wrap split">
+      <h2>Talks and media</h2>
+      <div class="body">
+        <ul class="events">
+          <li>
+            <span class="when">June 2025</span>
+            <span class="what"><b><a href="https://aihub.org/2025/06/10/interview-with-amar-halilovic-explainable-ai-for-robotics/">Interview with Amar Halilovic: Explainable AI for robotics.</a></b> AIhub, in a series of interviews with participants of the AAAI/SIGAI Doctoral Consortium.</span>
+          </li>
+          <li>
+            <span class="when">January 2025</span>
+            <span class="what"><b>Invited talk on explainable robot navigation.</b> Reasoning and Planning Group, King's College London.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ Contact -->
+  <section class="section" id="contact">
+    <div class="wrap split">
+      <h2>Contact</h2>
+      <div class="body">
+        <p>
+          I am glad to exchange on automated planning, knowledge representation and user studies.
+        </p>
+        <address>
+          <a class="mail" href="mailto:amar.halilovic@uni-ulm.de">amar.halilovic@uni-ulm.de</a>
+          <button type="button" class="copy" id="copy-mail" data-copy="amar.halilovic@uni-ulm.de" hidden>Copy</button><br>
+          Institute of Artificial Intelligence<br>
+          Ulm University, Germany
+        </address>
+        <p>
+          <a href="https://www.uni-ulm.de/en/in/institute-of-artificial-intelligence/inst/team/amar-halilovic/">Page at the Institute of Artificial Intelligence</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© 2026 Amar Halilovic</p>
+    <p>Last updated in November 2026. This page sets no cookies and loads nothing from other servers.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/demo.js" defer></script>
+</body>
+</html>
