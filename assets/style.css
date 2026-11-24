@@ -12,13 +12,13 @@
 
 /* ---------- colours ---------- */
 :root {
-  --bg: #fbfaf8;
+  --bg: #f7faf5;
   --surface: #ffffff;
-  --text: #1b1e22;
-  --muted: #5a626c;
-  --line: #e4e1da;
-  --accent: #0c5a61;
-  --accent-soft: #e6f1f1;
+  --text: #17201a;
+  --muted: #55635a;
+  --line: #dde5da;
+  --accent: #1d6b43;
+  --accent-soft: #e2f1e6;
   --on-accent: #ffffff;
   --warn: #b5451b;
   --shadow: 0 1px 2px rgba(20, 24, 28, .05), 0 8px 24px rgba(20, 24, 28, .06);
@@ -32,27 +32,27 @@
 /* The dark colours are written twice: once for a system that asks for dark, once for the button. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #101315;
-    --surface: #171b1e;
-    --text: #e9e7e3;
-    --muted: #a0a8b0;
-    --line: #2a3035;
-    --accent: #6fcfd3;
-    --accent-soft: #16292b;
-    --on-accent: #0b1213;
+    --bg: #0d1410;
+    --surface: #141c17;
+    --text: #e6ece6;
+    --muted: #9aaba0;
+    --line: #26322b;
+    --accent: #7dd6a1;
+    --accent-soft: #15291e;
+    --on-accent: #07130c;
     --warn: #f2956f;
     --shadow: none;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #101315;
-  --surface: #171b1e;
-  --text: #e9e7e3;
-  --muted: #a0a8b0;
-  --line: #2a3035;
-  --accent: #6fcfd3;
-  --accent-soft: #16292b;
-  --on-accent: #0b1213;
+  --bg: #0d1410;
+  --surface: #141c17;
+  --text: #e6ece6;
+  --muted: #9aaba0;
+  --line: #26322b;
+  --accent: #7dd6a1;
+  --accent-soft: #15291e;
+  --on-accent: #07130c;
   --warn: #f2956f;
   --shadow: none;
 }
